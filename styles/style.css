@@ -299,7 +299,7 @@ a:active {
 }
 
 .project-description {
-  font-size: 1.225rem;
+  font-size: 1.725rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -566,10 +566,6 @@ a:active {
   justify-content: center;
 }
 
-.large-emoji-placeholder {
-  font-size: 12rem; /* This is for making the placeholder emojis large and should be deleted */
-}
-
 .text-section {
   width: 100%;
 }
@@ -585,13 +581,7 @@ a:active {
 .project-details {
   width: 100%;
   padding: 1rem;
-  /* Delete the following if you do not want a gradient background on the project page */
-  background-image: linear-gradient(-225deg,
-      var(--linear-gradient-color-1) 0%,
-      var(--linear-gradient-color-2) 50%,
-      var(--linear-gradient-color-3) 100%);
 }
-
 
 
 
@@ -859,7 +849,7 @@ a.sub-navigation-link:hover {
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     grid-gap: 1rem;
   }
 

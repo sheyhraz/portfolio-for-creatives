@@ -9,9 +9,9 @@ Add the Google Fonts you want, remove the ones you don't.
 ██       ██████  ██   ████    ██    ███████ 
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Salsa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*
 
 Imported stylesheets. Remove the ones you do not want to use.
@@ -23,10 +23,10 @@ Imported stylesheets. Remove the ones you do not want to use.
 ██ ██      ██ ██       ██████  ██   ██    ██         ██████ ███████ ███████ 
 
 */
-@import url('animated-gradient.css');
-@import url('text-stroke.css');
-@import url('stroke-shadow.css');
-@import url('scroll-to-top.css');
+@import url("animated-gradient.css");
+@import url("text-stroke.css");
+@import url("stroke-shadow.css");
+@import url("scroll-to-top.css");
 /*
 
 X-Small devices (portrait phones, less than 576px) 
@@ -68,12 +68,12 @@ html {
 
 :root {
   --body-typeface: "Roboto", sans-serif;
-  --heading-typeface: 'Salsa', serif;
+  --heading-typeface: "Salsa", serif;
   --cyrillic-heading-typeface: "Cuprum", sans-serif;
-  --project-title-typeface: 'Salsa', serif;
+  --project-title-typeface: "Salsa", serif;
   --background-color: #eaf4f4;
   --background-color-about: #eaf4f4;
-  --background-color-footer: #eaf4f4;    
+  --background-color-footer: #eaf4f4;
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(255, 106, 6, 0.6);
   --h1-color: #fefefe;
@@ -82,12 +82,12 @@ html {
   --h4-color: #074b2e;
   --h5-color: #074b2e;
   --h6-color: #074b2e;
-  --primary-text-color: #112D32;
+  --primary-text-color: #112d32;
   --holding-page-title-color: #ebedf0;
   --accent-color: #060606;
-  --overlay-color: #FBEEC1;
+  --overlay-color: #fbeec1;
   --overlay-title-color: #000000;
-  --overlay-description-color: #2C3531;
+  --overlay-description-color: #2c3531;
   --hyperlink-color: #0a0a0a;
   --hyperlink-alternate-color: orangered;
   --hover-color: #cc802a;
@@ -104,7 +104,6 @@ html {
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
-
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
@@ -117,7 +116,7 @@ body {
 /* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
 
 ::selection {
-  background: var(--accent-color);
+  background: var(--text-selection-background-color);
 }
 
 /* Make all images responsive */
@@ -130,8 +129,6 @@ svg {
   object-fit: contain;
   /* This is optional. Also try cover or leave out entirely. */
 }
-
-
 
 /* Global & Mobile Typography 
 
@@ -149,7 +146,9 @@ h1 {
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
-.cyrillic{ font-family: var(--cyrillic-heading-typeface);}
+.cyrillic {
+  font-family: var(--cyrillic-heading-typeface);
+}
 h2 {
   font-size: 2.25rem;
   font-family: var(--heading-typeface);
@@ -193,7 +192,7 @@ em {
 }
 
 .fineprint {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .hero-headline {
@@ -215,7 +214,6 @@ em {
 .overlay-description {
   color: var(--overlay-description-color);
 }
-
 
 /* Hyperlink Styles */
 
@@ -269,8 +267,6 @@ a:active {
   background-position: center center;
 }
 
-
-
 .heart {
   color: var(--heart-color);
 }
@@ -298,8 +294,6 @@ a:active {
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-
-
 
 /* Hero 
 
@@ -363,9 +357,6 @@ a:active {
   padding: 1rem;
 }
 
-
-
-
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -383,7 +374,7 @@ a:active {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 /* Defining the work page grid */
@@ -418,16 +409,13 @@ a:active {
   flex-direction: column;
   padding: 1em;
   background-color: var(--overlay-color);
-  transition: opacity .3s, visibility .3s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .work-page-grid-item:hover .overlay {
   visibility: visible;
-  opacity: .8;
+  opacity: 0.8;
 }
-
-
-
 
 /* 
 
@@ -478,7 +466,6 @@ a:active {
                                                    
 */
 
-
 .global-footer {
   display: grid;
   grid-template-columns: 1fr;
@@ -511,7 +498,6 @@ a:active {
 .awards-list {
   margin-bottom: 2rem;
 }
-
 
 /* Project Page 
 
@@ -584,9 +570,6 @@ a:active {
   padding: 1rem;
 }
 
-
-
-
 /* 
 
 ██   ██  ██████  ██      ██████  ██ ███    ██  ██████  
@@ -606,8 +589,11 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* Delete the following if you do not want a grainy gradient background on the holding page */
-  background:
-    linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)),
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      var(--background-color-holding-page)
+    ),
     url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
@@ -629,7 +615,7 @@ a:active {
 }
 
 .holding-page-copyright {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--holding-page-footer-color);
   margin-bottom: 0;
 }
@@ -647,7 +633,6 @@ a:active {
   padding: 3rem;
 }
 
-
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
@@ -661,7 +646,8 @@ a:active {
   place-items: center;
 }
 
-.error-page-wrapper {}
+.error-page-wrapper {
+}
 
 .error-page-inner-container {
   text-align: center;
@@ -685,7 +671,8 @@ a:active {
   place-items: center;
 }
 
-.play-page-wrapper {}
+.play-page-wrapper {
+}
 
 .play-page-inner-container {
   text-align: center;
@@ -695,7 +682,6 @@ a:active {
   color: var(--accent-color);
 }
 
-
 /*
 ███████ ██   ██ ██████  ███████ ██████  ██ ███    ███ ███████ ███    ██ ████████ ███████ 
 ██       ██ ██  ██   ██ ██      ██   ██ ██ ████  ████ ██      ████   ██    ██    ██      
@@ -703,7 +689,6 @@ a:active {
 ██       ██ ██  ██      ██      ██   ██ ██ ██  ██  ██ ██      ██  ██ ██    ██         ██ 
 ███████ ██   ██ ██      ███████ ██   ██ ██ ██      ██ ███████ ██   ████    ██    ███████ 
 */
-
 
 .experiments-page {
   display: grid;
@@ -748,7 +733,8 @@ a:active {
   text-align: center;
 }
 
-.sub-navigation-item {}
+.sub-navigation-item {
+}
 
 a.sub-navigation-link {
   border: 1px solid var(--accent-color);
@@ -801,7 +787,6 @@ a.sub-navigation-link:hover {
   }
 }
 
-
 /*
 
 ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
@@ -812,15 +797,14 @@ a.sub-navigation-link:hover {
 
 */
 
-
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-
   .holding-page-title {
     font-size: 2rem;
   }
@@ -859,8 +843,8 @@ a.sub-navigation-link:hover {
     filter: grayscale(100);
   }
 
-  .work-page-grid-item>a.grayscale:active img,
-  .work-page-grid-item>a.grayscale:hover img {
+  .work-page-grid-item > a.grayscale:active img,
+  .work-page-grid-item > a.grayscale:hover img {
     filter: grayscale(0);
   }
 
@@ -927,7 +911,6 @@ a.sub-navigation-link:hover {
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
-
   }
 
   /* Sidebar on Large Devices */
@@ -961,18 +944,16 @@ a.sub-navigation-link:hover {
   .arrow {
     padding-right: 1rem;
   }
-
-
 }
-
 
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
 
-
 /* X-Large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}

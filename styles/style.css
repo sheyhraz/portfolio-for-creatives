@@ -77,11 +77,11 @@ html {
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(255, 106, 6, 0.6);
   --h1-color: #fefefe;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
+  --h2-color: #074b2e;
+  --h3-color: #074b2e;
+  --h4-color: #074b2e;
+  --h5-color: #074b2e;
+  --h6-color: #074b2e;
   --primary-text-color: #112D32;
   --holding-page-title-color: #ebedf0;
   --accent-color: #060606;
@@ -97,7 +97,7 @@ html {
   --project-sidebar-text-color: black;
   --heart-color: rgb(0, 0, 0);
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5200ff;
+  --text-selection-background-color: #ced2d0;
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
